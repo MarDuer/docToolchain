@@ -4,11 +4,11 @@ outputPath = 'build/docs'
 // This path is appended to the docDir property specified in gradle.properties
 // or in the command line, and therefore must be relative to it.
 
-inputPath = 'src/docs';
+inputPath = 'mydocs/src';
 
 
 inputFiles = [
-        [file: 'manual.adoc',       formats: ['html','pdf']],
+        [file: 'test.adoc', formats: ['html','pdf']]
 ]
 
 

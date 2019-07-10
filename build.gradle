@@ -6,6 +6,7 @@ plugins {
     id "org.asciidoctor.convert" version "1.5.3"
     id "org.aim42.htmlSanityCheck" version "1.0.0-RC-2"
     id "com.github.ben-manes.versions" version "0.15.0"
+    id "org.ajoberstar.git-publish" version "2.1.1" 
 }
 
 apply plugin:'groovy'
@@ -69,6 +70,7 @@ apply from: 'scripts/publishToConfluence.gradle'
 apply from: 'scripts/htmlSanityCheck.gradle'
 apply from: 'scripts/collectIncludes.gradle'
 apply from: 'scripts/exportMetrics.gradle'
+apply from: 'scripts/gitPublish.gradle'
 
 // let's set a defaultTask for convenience
 //defaultTasks 'exportChangeLog','exportJiraIssues','asciidoctor'
